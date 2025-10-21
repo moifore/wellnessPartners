@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background-color: #e9ecef;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+            padding: 20px;
+            border: 1px solid #ddd;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+            font-weight: 600;
+            text-align: center;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        caption {
+            font-size: 1.5em;
+            margin: 10px 0;
+            color: #007bff;
+            font-weight: bold;
+            text-align: center;
+        }
+        p {
+            margin: 0 0 15px 0;
+            font-size: 1em;
+        }
+        .footer {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 20px;
+            text-align: center;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            th, td {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Dear [field id="name"],</p>
+        <p>Your claim for <strong>[field id="claim_type"]</strong> was successfully received, and will begin processing it promptly. Kindly see your claim details below:<br><br></p>
+        
+        <table>
+            <tr>
+                <th>YOUR CLAIM DETAILS</th>
+                <th> </th>
+            </tr>
+            <tr>
+                <td>Client Name</td>
+                <td>[field id="name"]</td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td>[field id="phone"]</td>
+            </tr>
+            <tr>
+                <td>Email Address</td>
+                <td>[field id="client_email"]</td>
+            </tr>
+            <tr>
+                <td>Claim Type</td>
+                <td>[field id="claim_type"]</td>
+            </tr>
+            <tr>
+                <td>Claim Detail</td>
+                <td>[field id="message"]</td>
+            </tr>
+        </table>
+        
+        <p>Here’s a brief overview of the next steps:</p>
+
+        <p>
+            1. <strong>Claim Review:</strong> Our team will review the details provided to ensure all necessary information is included. If we require any additional documents or clarification, we will contact you.<br><br>
+
+            2. <strong>Processing Time:</strong> The typical processing time for claims is 7-10 business days. We appreciate your patience during this period.<br><br>
+
+            3. <strong>Status Updates:</strong> We will keep you informed of the progress and notify you once your claim has been reviewed and a decision has been made.<br><br>
+
+            4. <strong>Contact Information:</strong> If you have any questions or need further assistance, please feel free to reply to this email.<br><br>
+
+            We appreciate your attention to this matter and thank you for choosing Safe Insurance Brokers.
+            <br><br>
+
+            Best regards,<br><br>
+
+            Customer Service Agent<br>
+            Safe Insurance Brokers Inc.<br>
+            https://safeinsurancebrokers.com/
+        </p>
+    </div>
+</body>
+</html>
